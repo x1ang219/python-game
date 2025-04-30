@@ -9,7 +9,7 @@
     並詢問是否需要再玩一次？
 
 執行方法：
-    python guess_number.py
+    python guess_game.py
 """
 
 import random
@@ -48,7 +48,7 @@ def play_game(low: int = 1, high: int = 100):
             break
 
 def main() -> None:
-    # 主迴圈，可重複遊戲。
+    # 主要迴圈，可以重複遊戲。
     while True:
         play_game()
         again = input("\n再玩一次？(Y/N): ").strip().lower()
