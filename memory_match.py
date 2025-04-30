@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" () — tkinter 版
+""" 用tkinter製作記憶翻牌小遊戲
 ================================================
 4x4 = 16 張牌，玩家點擊兩張：
     -> 若圖案相同，就保持翻開並加分
@@ -8,18 +8,13 @@
 
 執行：
     python memory_match.py
-
-可延伸：
-    1. 改成 6×6 難度、加計時器
-    2. 用 PNG 圖片 (PhotoImage) 取代 emoji
-    3. 記錄排行榜或多關卡
 """
 
 import random
 import tkinter as tk
 from functools import partial
 
-EMOJIS = ["🍎", "🍇", "🍋", "🍓", "🍑", "🍍", "🥝", "🥑"]  # 8 種 * 2 = 16
+EMOJIS = ["🍎", "🍇", "🍋", "🍓", "🍑", "🍍", "🥝", "🥑"]  # 8 種水果 * 2（一對） = 16
 CARD_BACK = "點我"
 GRID_SIZE = 4  # 4×4 格
 DELAY_MS = 1000  # 延遲
