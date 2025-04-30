@@ -108,7 +108,7 @@ class MemoryMatch(tk.Tk):
 
 if __name__ == "__main__":
     # 提前匯入 messagebox
-    import tkinter.messagebox
+    import tkinter.messagebox # noqa: F401 告知請別標成「未使用的匯入」警告
 
     game = MemoryMatch()
     game.mainloop()
