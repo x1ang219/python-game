@@ -1,27 +1,21 @@
 #!/usr/bin/env python3
-"""Rock-Paper-Scissors GUI Game
+"""Rock-Paper-Scissors GUI小遊戲
 ================================
-使用 tkinter 製作的石頭剪刀布小遊戲，可作為 B2 其他課程學習成果。
+使用 tkinter 製作的石頭剪刀布小遊戲。
 
 執行方式：
-    python rps_gui.py
+    python Rock-Paper-Scissors.py
 
 遊戲特色：
-    • 石頭✊／剪刀✌／布🖐 按鈕點擊即玩
+    • 石頭✊／剪刀✌️／布🖐 按鈕點擊即玩
     • 即時顯示電腦出拳與結果
     • 自動計分，按「重置」可歸零重玩
-
-延伸挑戰：
-    1. 將 emoji 改為 PNG 圖片 (PhotoImage)
-    2. 新增音效 (playsound)
-    3. 增加最佳 N 局三勝制
-    4. 重新配色或換字體，美化 UI
 """
 
 import tkinter as tk
 from random import choice
 
-# 名稱與對應 emoji
+# 名稱對應的emoji
 CHOICES = [
     ("石頭", "✊"),
     ("剪刀", "✌️"),
